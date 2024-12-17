@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: hello-vijay
   labels:
-    app: hello-world
+    app: hello-vijay
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-world
+      app: hello-vijay
   template:
     metadata:
       labels:
-        app: hello-world
+        app: hello-vijay
     spec:
       containers:
-      - name: hello-world
-        image: vijaybtw07/hello-world:latest
+      - name: hello-vijay
+        image: vijaybtw07/hello-vijay:latest
         ports:
         - containerPort: 80
